@@ -118,44 +118,45 @@ export default function OurWork() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-2 gap-3 sm:gap-12">
             {filteredProjects.map((project, i) => (
               <div key={i} className="group flex flex-col h-full">
                 
                 {/* Mac OS Browser Frame */}
-                <div className="rounded-t-2xl bg-slate-800 border-x border-t border-slate-700/50 p-3 flex items-center gap-2">
-                   <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                   <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-                   <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
-                   <div className="ml-4 bg-slate-700/50 text-slate-400 text-xs px-4 py-1 rounded-full font-mono truncate max-w-[200px]">
+                <div className="rounded-t-xl sm:rounded-t-2xl bg-slate-800 border-x border-t border-slate-700/50 p-2 sm:p-3 flex items-center gap-1.5 sm:gap-2">
+                   <div className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80"></div>
+                   <div className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80"></div>
+                   <div className="w-1.5 h-1.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80"></div>
+                   <div className="ml-1 sm:ml-4 bg-slate-700/50 text-slate-400 text-[8px] sm:text-xs px-2 sm:px-4 py-0.5 sm:py-1 rounded-full font-mono truncate max-w-[80px] sm:max-w-[200px]">
                      {project.domain}
                    </div>
                 </div>
 
                 {/* Project Screenshot */}
-                <div className="h-64 sm:h-80 bg-slate-100 w-full flex items-center justify-center overflow-hidden border-x border-slate-200 relative">
+                <div className="h-28 sm:h-80 bg-slate-100 w-full flex items-center justify-center overflow-hidden border-x border-slate-200 relative">
                   <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-300 z-10 pointer-events-none"></div>
-                  <img src={project.imgUrl} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={project.imgUrl} alt={project.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 
                 {/* Project Details */}
-                <div className="p-8 bg-white border border-slate-200 border-t-0 rounded-b-2xl shadow-sm group-hover:shadow-xl transition-shadow flex flex-col flex-grow">
-                  <span className="text-xs font-bold tracking-wider text-sky-600 uppercase mb-3 block">
+                <div className="p-3 sm:p-8 bg-white border border-slate-200 border-t-0 rounded-b-xl sm:rounded-b-2xl shadow-sm group-hover:shadow-xl transition-shadow flex flex-col flex-grow">
+                  <span className="text-[9px] sm:text-xs font-bold tracking-wider text-sky-600 uppercase mb-1 sm:mb-3 block line-clamp-1">
                     {project.category} • {project.type}
                   </span>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-2">{project.title}</h3>
-                  <a href={`https://${project.domain}`} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-sky-600 hover:underline mb-4 inline-block font-medium">
+                  <h3 className="text-sm sm:text-2xl font-bold text-slate-900 mb-1 sm:mb-2 leading-tight">{project.title}</h3>
+                  <a href={`https://${project.domain}`} target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-sm text-slate-500 hover:text-sky-600 hover:underline mb-2 sm:mb-4 inline-block font-medium truncate">
                     {project.domain}
                   </a>
-                  <p className="text-slate-600 mb-8 flex-grow leading-relaxed">{project.desc}</p>
+                  <p className="text-slate-600 text-[11px] sm:text-base mb-4 sm:mb-8 flex-grow leading-snug sm:leading-relaxed line-clamp-3 sm:line-clamp-none">{project.desc}</p>
                   
                   <Link 
                     href={`https://wa.me/923097354874?text=Assalam-o-Alaikum,%20mujhe%20aapka%20project%20${encodeURIComponent(project.title)}%20pasand%20aaya.%20Main%20aisi%20hi%20ek%20website%20banwana%20chahta%20hoon.`} 
                     target="_blank"
-                    className="inline-flex items-center gap-2 text-sky-600 font-bold hover:gap-3 transition-all mt-auto group/btn"
+                    className="inline-flex items-center gap-1 sm:gap-2 text-sky-600 font-bold hover:gap-1.5 sm:hover:gap-3 transition-all mt-auto group/btn text-[10px] sm:text-base"
                   >
-                    Discuss similar project
-                    <ArrowRight size={20} className="text-sky-500 group-hover/btn:translate-x-1 transition-transform" />
+                    <span className="hidden sm:inline">Discuss similar project</span>
+                    <span className="sm:hidden">Discuss</span>
+                    <ArrowRight className="w-3 h-3 sm:w-5 sm:h-5 text-sky-500 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
