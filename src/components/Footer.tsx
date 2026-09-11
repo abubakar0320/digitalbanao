@@ -46,15 +46,15 @@ export default function Footer() {
             </div>
 
             <div className="flex space-x-3 sm:space-x-4">
-              <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm">
+              <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#1877F2]/10 border border-[#1877F2]/20 flex items-center justify-center text-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] transition-all shadow-sm">
                 <span className="sr-only">Facebook</span>
                 <FacebookIcon />
               </a>
-              <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-pink-50 hover:text-pink-600 hover:border-pink-200 transition-all shadow-sm">
+              <a href="https://www.instagram.com/mehmad_al_fatih.05/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#E4405F]/10 border border-[#E4405F]/20 flex items-center justify-center text-[#E4405F] hover:bg-[#E4405F] hover:text-white hover:border-[#E4405F] transition-all shadow-sm">
                 <span className="sr-only">Instagram</span>
                 <InstagramIcon />
               </a>
-              <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-500 hover:bg-blue-50 hover:text-blue-500 hover:border-blue-200 transition-all shadow-sm">
+              <a href="https://www.linkedin.com/in/abubakar0320/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A66C2]/10 border border-[#0A66C2]/20 flex items-center justify-center text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2] transition-all shadow-sm">
                 <span className="sr-only">LinkedIn</span>
                 <LinkedinIcon />
               </a>
