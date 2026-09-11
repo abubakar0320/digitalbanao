@@ -30,9 +30,9 @@ export default function Footer() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-100/50 rounded-full blur-[100px] pointer-events-none"></div>
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-16 mb-10 sm:mb-16">
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-4 sm:gap-16 mb-10 sm:mb-16">
           
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-3 md:col-span-1">
             <Link href="/" className="inline-block mb-4 sm:mb-6 hover:scale-105 transition-transform">
               <img src="/logo-cropped.jpg" alt="Digital Banao" className="h-10 sm:h-12 w-auto object-contain mix-blend-multiply" />
             </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-3 md:col-span-1">
             <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide">Get In Touch</h3>
             <ul className="space-y-3 sm:space-y-4">
               <li>
