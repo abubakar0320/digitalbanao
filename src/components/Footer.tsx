@@ -91,9 +91,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-3 md:col-span-1">
+          <div>
             <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide">Get In Touch</h3>
-            <ul className="space-y-3 sm:space-y-4">
+            <ul className="space-y-2.5 sm:space-y-4">
               <li>
                 <a 
                   href="https://wa.me/923097354874" 
@@ -101,10 +101,10 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 sm:gap-3 text-slate-600 hover:text-emerald-600 transition-colors group font-medium"
                 >
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover:border-emerald-200 group-hover:bg-emerald-50 shadow-sm transition-all">
-                    <MessageCircle className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                  <div className="hidden sm:flex w-10 h-10 rounded-full bg-white border border-slate-200 items-center justify-center group-hover:border-emerald-200 group-hover:bg-emerald-50 shadow-sm transition-all">
+                    <MessageCircle className="w-[18px] h-[18px]" />
                   </div>
-                  <span className="text-xs sm:text-base">WhatsApp Us</span>
+                  <span className="text-xs sm:text-base">WhatsApp</span>
                 </a>
               </li>
               <li>
@@ -112,10 +112,10 @@ export default function Footer() {
                   href="mailto:abubakr.bgnu@gmail.com" 
                   className="flex items-center gap-2 sm:gap-3 text-slate-600 hover:text-blue-600 transition-colors group font-medium"
                 >
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center group-hover:border-blue-200 group-hover:bg-blue-50 shadow-sm transition-all">
-                    <Mail className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                  <div className="hidden sm:flex w-10 h-10 rounded-full bg-white border border-slate-200 items-center justify-center group-hover:border-blue-200 group-hover:bg-blue-50 shadow-sm transition-all">
+                    <Mail className="w-[18px] h-[18px]" />
                   </div>
-                  <span className="text-xs sm:text-base truncate">abubakr.bgnu@gmail.com</span>
+                  <span className="text-xs sm:text-base">Email Us</span>
                 </a>
               </li>
             </ul>
