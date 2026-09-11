@@ -99,10 +99,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
             {/* Website Card */}
-            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
-              <div className="h-56 overflow-hidden relative">
+            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+              <div className="h-32 sm:h-56 overflow-hidden relative">
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" 
                   alt="Website Development" 
@@ -110,21 +110,21 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-8 flex-1 flex flex-col">
-                <div className="bg-blue-50 text-blue-700 font-bold text-xs px-3 py-1 rounded-full w-max mb-4 uppercase tracking-wider">Online Presence</div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Website</h3>
-                <p className="text-slate-600 mb-6 flex-1">
+              <div className="p-4 sm:p-8 flex-1 flex flex-col">
+                <div className="bg-blue-50 text-blue-700 font-bold text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded-full w-max mb-2 sm:mb-4 uppercase tracking-wider">Online Presence</div>
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-900 mb-2 sm:mb-3">Website</h3>
+                <p className="text-slate-600 text-xs sm:text-base mb-4 sm:mb-6 flex-1 line-clamp-3 sm:line-clamp-none">
                   Apne business ke liye professional, fast, aur modern website banwayein jo customers ko attract kare.
                 </p>
-                <Link href="/websites" className="inline-flex items-center text-blue-600 font-semibold hover:gap-3 gap-2 transition-all mt-auto">
-                  Explore Websites <ArrowRight size={20} />
+                <Link href="/websites" className="inline-flex items-center text-blue-600 font-semibold hover:gap-3 gap-2 transition-all mt-auto text-sm sm:text-base">
+                  Explore <span className="hidden sm:inline">Websites</span> <ArrowRight size={16} className="sm:w-5 sm:h-5" />
                 </Link>
               </div>
             </div>
 
             {/* Software Card */}
-            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
-              <div className="h-56 overflow-hidden relative">
+            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
+              <div className="h-32 sm:h-56 overflow-hidden relative">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" 
                   alt="Software Development" 
@@ -132,21 +132,21 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-8 flex-1 flex flex-col">
-                <div className="bg-indigo-50 text-indigo-700 font-bold text-xs px-3 py-1 rounded-full w-max mb-4 uppercase tracking-wider">Business Management</div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Software</h3>
-                <p className="text-slate-600 mb-6 flex-1">
+              <div className="p-4 sm:p-8 flex-1 flex flex-col">
+                <div className="bg-indigo-50 text-indigo-700 font-bold text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded-full w-max mb-2 sm:mb-4 uppercase tracking-wider line-clamp-1">Business Management</div>
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-900 mb-2 sm:mb-3">Software</h3>
+                <p className="text-slate-600 text-xs sm:text-base mb-4 sm:mb-6 flex-1 line-clamp-3 sm:line-clamp-none">
                   Apne daily business operations, inventory aur sales ko manage karne ke liye custom software.
                 </p>
-                <Link href="/software" className="inline-flex items-center text-indigo-600 font-semibold hover:gap-3 gap-2 transition-all mt-auto">
-                  Explore Software <ArrowRight size={20} />
+                <Link href="/software" className="inline-flex items-center text-indigo-600 font-semibold hover:gap-3 gap-2 transition-all mt-auto text-sm sm:text-base">
+                  Explore <span className="hidden sm:inline">Software</span> <ArrowRight size={16} className="sm:w-5 sm:h-5" />
                 </Link>
               </div>
             </div>
 
             {/* Mobile App Card */}
-            <div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col">
-              <div className="h-56 overflow-hidden relative">
+            <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col sm:col-span-1 col-span-2 md:col-span-1">
+              <div className="h-40 sm:h-56 overflow-hidden relative">
                 <img 
                   src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800" 
                   alt="Mobile App Development" 
@@ -154,14 +154,14 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
-              <div className="p-8 flex-1 flex flex-col">
-                <div className="bg-emerald-50 text-emerald-700 font-bold text-xs px-3 py-1 rounded-full w-max mb-4 uppercase tracking-wider">Customer Engagement</div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Mobile App</h3>
-                <p className="text-slate-600 mb-6 flex-1">
+              <div className="p-4 sm:p-8 flex-1 flex flex-col">
+                <div className="bg-emerald-50 text-emerald-700 font-bold text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded-full w-max mb-2 sm:mb-4 uppercase tracking-wider">Customer Engagement</div>
+                <h3 className="text-lg sm:text-2xl font-bold text-slate-900 mb-2 sm:mb-3">Mobile App</h3>
+                <p className="text-slate-600 text-xs sm:text-base mb-4 sm:mb-6 flex-1 line-clamp-3 sm:line-clamp-none">
                   Apne customers ki pocket tak pohanchne ke liye Android aur iOS applications banwayein.
                 </p>
-                <Link href="/apps" className="inline-flex items-center text-emerald-600 font-semibold hover:gap-3 gap-2 transition-all mt-auto">
-                  Explore Apps <ArrowRight size={20} />
+                <Link href="/apps" className="inline-flex items-center text-emerald-600 font-semibold hover:gap-3 gap-2 transition-all mt-auto text-sm sm:text-base">
+                  Explore <span className="hidden sm:inline">Apps</span> <ArrowRight size={16} className="sm:w-5 sm:h-5" />
                 </Link>
               </div>
             </div>
@@ -217,7 +217,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
             {[
               { name: 'Education', img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600' },
               { name: 'Retail', img: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600' },
@@ -226,11 +226,11 @@ export default function Home() {
               { name: 'Real Estate', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600' },
               { name: 'Small Business', img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600' }
             ].map((solution, i) => (
-              <div key={i} className="relative h-48 rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
+              <div key={i} className="relative h-32 sm:h-48 rounded-xl sm:rounded-2xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
                 <img src={solution.img} alt={solution.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-6">
-                  <span className="text-xl font-bold text-white tracking-wide">{solution.name}</span>
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-6">
+                  <span className="text-sm sm:text-xl font-bold text-white tracking-wide">{solution.name}</span>
                 </div>
               </div>
             ))}
@@ -246,7 +246,7 @@ export default function Home() {
             <p className="text-lg text-slate-600 font-medium">Kuch selected projects jo humne success ke sath develop kiye hain.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
             {[
               { 
                 title: "Jamia Sher-e-Rabbani", 
@@ -277,25 +277,25 @@ export default function Home() {
                 imgUrl: "https://api.microlink.io/?url=https://iamabubakar.site&screenshot=true&meta=false&embed=screenshot.url&waitFor=5000"
               }
             ].map((project, i) => (
-              <div key={i} className="bg-slate-50 rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group flex flex-col">
+              <div key={i} className="bg-slate-50 rounded-xl sm:rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group flex flex-col">
                 {/* Browser Window Frame */}
-                <div className="h-48 w-full flex flex-col bg-white overflow-hidden border-b border-slate-100 relative">
-                  <div className="h-7 w-full bg-slate-100 flex items-center px-3 gap-1.5 shrink-0 border-b border-slate-200/50 absolute top-0 z-10">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-400"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+                <div className="h-24 sm:h-48 w-full flex flex-col bg-white overflow-hidden border-b border-slate-100 relative">
+                  <div className="h-5 sm:h-7 w-full bg-slate-100 flex items-center px-2 sm:px-3 gap-1 sm:gap-1.5 shrink-0 border-b border-slate-200/50 absolute top-0 z-10">
+                    <div className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 rounded-full bg-red-400"></div>
+                    <div className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 rounded-full bg-amber-400"></div>
+                    <div className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-400"></div>
                   </div>
-                  <div className="pt-7 w-full h-full">
+                  <div className="pt-5 sm:pt-7 w-full h-full">
                     <img src={project.imgUrl} alt={project.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
                   </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <span className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-2 block">{project.tag}</span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">{project.title}</h3>
-                  <a href={`https://${project.domain}`} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-500 hover:text-blue-700 hover:underline mb-3 block truncate">
+                <div className="p-3 sm:p-6 flex-1 flex flex-col">
+                  <span className="text-[10px] sm:text-xs font-bold tracking-wider text-blue-600 uppercase mb-1 sm:mb-2 block">{project.tag}</span>
+                  <h3 className="text-sm sm:text-xl font-bold text-slate-900 mb-1 leading-tight">{project.title}</h3>
+                  <a href={`https://${project.domain}`} target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-blue-500 hover:text-blue-700 hover:underline mb-2 block truncate">
                     {project.domain}
                   </a>
-                  <p className="text-slate-600 text-sm mt-auto">{project.desc}</p>
+                  <p className="text-slate-600 text-xs sm:text-sm mt-auto line-clamp-2 sm:line-clamp-none">{project.desc}</p>
                 </div>
               </div>
             ))}
@@ -319,7 +319,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8 justify-center">
             {[
               { 
                 step: "01", title: "Choose Service", desc: "Aapko website, software ya app jo chahiye wo select karein.", 
@@ -338,24 +338,24 @@ export default function Home() {
                 img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600" 
               },
               { 
-                step: "05", title: "Launch Project", desc: "Testing ke baad aapka final digital solution live ho jayega!", 
+                step: "05", title: "Launch", desc: "Testing ke baad aapka final digital solution live ho jayega!", 
                 img: "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&q=80&w=600" 
               },
             ].map((s, i) => (
               <div 
                 key={i} 
-                className={`bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group flex flex-col ${i === 3 ? 'lg:col-start-1 lg:translate-x-1/2' : ''} ${i === 4 ? 'lg:col-start-2 lg:translate-x-1/2' : ''}`}
+                className={`bg-white rounded-xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group flex flex-col ${i === 4 ? 'col-span-2 lg:col-span-1 lg:col-start-2 w-1/2 mx-auto lg:w-full' : ''}`}
               >
-                 <div className="h-56 relative overflow-hidden">
+                 <div className="h-28 sm:h-56 relative overflow-hidden">
                     <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
-                    <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-slate-900 font-extrabold px-4 py-1.5 rounded-full shadow-lg text-sm tracking-wide">
+                    <div className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-sm text-slate-900 font-extrabold px-2 py-1 sm:px-4 sm:py-1.5 rounded-full shadow-lg text-[10px] sm:text-sm tracking-wide">
                       Step {s.step}
                     </div>
                  </div>
-                 <div className="p-8 flex-1 flex flex-col">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">{s.title}</h3>
-                    <p className="text-slate-600 font-medium leading-relaxed">{s.desc}</p>
+                 <div className="p-4 sm:p-8 flex-1 flex flex-col">
+                    <h3 className="text-sm sm:text-2xl font-bold text-slate-900 mb-2 sm:mb-3">{s.title}</h3>
+                    <p className="text-slate-600 text-xs sm:text-base font-medium leading-tight sm:leading-relaxed line-clamp-3 sm:line-clamp-none">{s.desc}</p>
                  </div>
               </div>
             ))}
@@ -375,7 +375,7 @@ export default function Home() {
                 Humara focus sirf code likhna nahi, balke aapke business ke liye ek profitable digital ecosystem banana hai jo actual results de.
               </p>
               
-              <div className="grid sm:grid-cols-2 gap-x-6 gap-y-10">
+              <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10">
                 {[
                   { title: "Simple Process", desc: "No complicated tech jargon. Sirf simple aur clear baat cheet." },
                   { title: "Business Focused", desc: "Sirf design nahi, aapki business growth ko primary focus rakhte hain." },
@@ -384,13 +384,13 @@ export default function Home() {
                   { title: "Modern Tech", desc: "Latest technologies for lightning fast speed aur security." },
                   { title: "Reliable Support", desc: "Project delivery ke baad 24/7 dedicated maintenance aur support." },
                 ].map((reason, i) => (
-                  <div key={i} className="flex gap-4 group">
-                    <div className="shrink-0 w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">
-                      <CheckCircle2 size={24} />
+                  <div key={i} className="flex flex-col sm:flex-row gap-2 sm:gap-4 group">
+                    <div className="shrink-0 w-8 h-8 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">
+                      <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-2">{reason.title}</h3>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">{reason.desc}</p>
+                      <h3 className="text-sm sm:text-xl font-bold text-slate-900 mb-1 sm:mb-2">{reason.title}</h3>
+                      <p className="text-slate-600 text-[10px] sm:text-sm leading-snug sm:leading-relaxed font-medium">{reason.desc}</p>
                     </div>
                   </div>
                 ))}
