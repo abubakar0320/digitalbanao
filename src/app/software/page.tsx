@@ -114,27 +114,27 @@ export default function Software() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8">
             {softwareTypes.map((type, i) => (
-              <div key={i} className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group flex flex-col h-full">
+              <div key={i} className="bg-white rounded-xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-slate-100 group flex flex-col h-full">
                 {/* Photo Header */}
-                <div className="h-56 relative overflow-hidden">
+                <div className="h-28 sm:h-56 relative overflow-hidden">
                    <img src={type.img} alt={type.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
-                   <h3 className="absolute bottom-6 left-6 right-6 text-2xl font-bold text-white leading-tight">{type.title}</h3>
+                   <h3 className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 text-sm sm:text-2xl font-bold text-white leading-tight">{type.title}</h3>
                 </div>
                 
                 {/* Content */}
-                <div className="p-8 flex flex-col flex-grow">
-                  <p className="text-slate-600 mb-8 font-medium leading-relaxed">{type.desc}</p>
+                <div className="p-4 sm:p-8 flex flex-col flex-grow">
+                  <p className="text-slate-600 mb-4 sm:mb-8 text-xs sm:text-base font-medium leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">{type.desc}</p>
                   
-                  <div className="mb-8 flex-grow">
-                    <h4 className="font-bold text-slate-900 mb-4 text-sm uppercase tracking-wider text-indigo-600">Key Features</h4>
-                    <ul className="space-y-3">
+                  <div className="mb-4 sm:mb-8 flex-grow">
+                    <h4 className="font-bold text-slate-900 mb-2 sm:mb-4 text-[10px] sm:text-sm uppercase tracking-wider text-indigo-600">Key Features</h4>
+                    <ul className="space-y-1.5 sm:space-y-3">
                       {type.features.map((feature, j) => (
-                        <li key={j} className="flex items-start gap-3 text-sm text-slate-600 font-medium">
-                          <CheckCircle2 size={18} className="text-emerald-500 shrink-0" />
-                          <span>{feature}</span>
+                        <li key={j} className="flex items-start gap-1.5 sm:gap-3 text-[10px] sm:text-sm text-slate-600 font-medium">
+                          <CheckCircle2 className="w-3 h-3 sm:w-[18px] sm:h-[18px] text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="leading-tight">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -143,10 +143,11 @@ export default function Software() {
                   <Link
                     href={`https://wa.me/923097354874?text=${encodeURIComponent(type.msg)}`}
                     target="_blank"
-                    className="flex justify-center items-center gap-2 w-full bg-slate-50 hover:bg-emerald-500 text-slate-700 hover:text-white px-4 py-4 rounded-2xl font-bold transition-all shadow-sm border border-slate-200 hover:border-transparent group/btn"
+                    className="flex justify-center items-center gap-1 sm:gap-2 w-full bg-slate-50 hover:bg-emerald-500 text-slate-700 hover:text-white px-2 sm:px-4 py-2.5 sm:py-4 rounded-xl sm:rounded-2xl font-bold transition-all shadow-sm border border-slate-200 hover:border-transparent group/btn text-xs sm:text-base"
                   >
-                    <MessageCircle size={20} className="text-emerald-500 group-hover/btn:text-white" />
-                    Discuss on WhatsApp
+                    <MessageCircle className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-emerald-500 group-hover/btn:text-white" />
+                    <span className="hidden sm:inline">Discuss on WhatsApp</span>
+                    <span className="sm:hidden">Discuss</span>
                   </Link>
                 </div>
               </div>
