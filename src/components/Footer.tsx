@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide">Services</h3>
+            <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide pb-2 sm:pb-3 border-b-2 border-red-500">Services</h3>
             <ul className="space-y-2.5 sm:space-y-4">
               <li>
                 <Link href="/websites" className="text-xs sm:text-base text-slate-600 hover:text-blue-600 hover:translate-x-1 inline-block transition-all font-medium">Websites</Link>
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide">Company</h3>
+            <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide pb-2 sm:pb-3 border-b-2 border-red-500">Company</h3>
             <ul className="space-y-2.5 sm:space-y-4">
               <li>
                 <Link href="/business-solutions" className="text-xs sm:text-base text-slate-600 hover:text-blue-600 hover:translate-x-1 inline-block transition-all font-medium">Solutions</Link>
@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide">Get In Touch</h3>
+            <h3 className="text-sm sm:text-lg font-bold text-slate-900 mb-4 sm:mb-6 tracking-wide pb-2 sm:pb-3 border-b-2 border-red-500">Get In Touch</h3>
             <ul className="space-y-2.5 sm:space-y-4">
               <li>
                 <a 
